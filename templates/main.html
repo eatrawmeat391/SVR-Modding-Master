@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-4.4.1.min.css') }}" >		
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.dataTables.min.css') }}" >		
+		
+		<script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/bootstrap-4.4.1.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.dataTables.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/String.js') }}"></script>
+		
+		<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+		
+		
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12" style="text-align:center">
+					<h2>SVR Modding Master</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+				<form id="pac_fileinfo" enctype="multipart/form-data" method="post" name="fileinfo">
+					<label>File to open:</label>
+					<input type="file" id="open_pac_input" name="open_pac_file" required />
+				</form>					
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-12">
+				<div id="table_pac_info_wrapper">
+					<table id="table_pac_info" class="table">
+						<thead>
+							<tr>
+								<th>File No.</th>
+								<th>File Extension</th>
+								<th>File Length</th>
+								<th>File Action</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+						
+						</tbody>
+					</table>
+				</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
